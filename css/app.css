@@ -45,6 +45,15 @@ a:hover{
           transform: rotate(360deg);
 }
 
+.dinoMascot{
+  position: absolute;
+  background: url("../images/mascotDino.svg");
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  bottom: 10%;
+  right: 5%;
+}
 
 /* Navbar */
 
@@ -123,4 +132,3 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
           transform: scale(0);
   transition: all 0.3s ease;
 }
-
