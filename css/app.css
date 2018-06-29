@@ -40,3 +40,13 @@ body{
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
+
+.dinoMascot{
+  position: absolute;
+  background: url("../images/mascotDino.svg");
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  bottom: 10%;
+  right: 5%;
+}
