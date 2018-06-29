@@ -1,6 +1,7 @@
 body{
   background-color: #211E1E;
   padding-left: 3%;
+  padding-top: 330px;
 }
 
 a:hover{
@@ -55,11 +56,11 @@ a:hover{
   right: 5%;
 }
 
-/* Navbar */
-
-body {
-  padding-top: 330px;
+.tipografia{
+  height: 12rem;
 }
+
+/* Navbar */
 
 .sticky-shrinknav-menu {
   position: absolute;
@@ -95,7 +96,7 @@ body {
       -ms-transform: translateY(-1.875rem);
           transform: translateY(-1.875rem);
   margin-bottom: 0;
-  color: #fefefe;
+  color: #ECEDEC;
 }
 
 .sticky-shrinknav-header {
