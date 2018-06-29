@@ -1,3 +1,7 @@
+body{
+  background-color: #211E1E;
+}
+
 .hero-full-screen {
     height: 100vh;
     display: -webkit-flex;
@@ -12,7 +16,6 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
     background-size: cover;
   }
   
@@ -98,30 +101,12 @@ a:hover{
           transform: rotate(360deg);
 }
 
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
 
 .rounded-social-buttons .social-button.facebook:before {
   font-family: "FontAwesome";
-}
-
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
 }
 
 .rounded-social-buttons .social-button.instagram:before {
   font-family: "FontAwesome";
 }
 
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
