@@ -2,82 +2,20 @@ body{
   background-color: #211E1E;
 }
 
-.hero-full-screen {
-    height: 100vh;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-size: cover;
-  }
-  
-  .hero-full-screen .middle-content-section {
-    text-align: center;
-    color: #fefefe;
-  }
-  
-  .hero-full-screen .top-content-section {
-    width: 100%;
-  }
-  
-  .hero-full-screen .bottom-content-section {
-    padding: 1rem;
-  }
-  
-  .hero-full-screen .bottom-content-section svg {
-    height: 3.75rem;
-    width: 3.75rem;
-    fill: #fefefe;
-  }
-  
-  .hero-full-screen .top-bar {
-    background: transparent;
-  }
-  
-  .hero-full-screen .top-bar .menu {
-    background: transparent;
-  }
-  
-  .hero-full-screen .top-bar .menu-text {
-    color: #fefefe;
-  }
-  
-  .hero-full-screen .top-bar .menu li {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  .hero-full-screen .top-bar .menu a {
-    color: #fefefe;
-    font-weight: bold;
-  }
-
 a:hover{
-    color:#3FAE29 !important; 
+    color:#3FAE29; 
 }
-
-
 
 /*  */
 .rounded-social-buttons {
-  text-align: center;
+  left: 0%;
+  bottom: 3%;
+  position: fixed;
 }
 
 .rounded-social-buttons .social-button {
   display: inline-block;
-  position: relative;
+  position: inherit;
   cursor: pointer;
   width: 3.125rem;
   height: 3.125rem;
@@ -85,7 +23,7 @@ a:hover{
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
+  color: #ECEDEC;
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
@@ -100,13 +38,3 @@ a:hover{
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
-
-
-.rounded-social-buttons .social-button.facebook:before {
-  font-family: "FontAwesome";
-}
-
-.rounded-social-buttons .social-button.instagram:before {
-  font-family: "FontAwesome";
-}
-
