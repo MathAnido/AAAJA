@@ -1,6 +1,5 @@
 body{
   background-color: #211E1E;
-<<<<<<< HEAD
   padding-left: 3%;
 }
 
@@ -11,24 +10,12 @@ a:hover{
 .rounded-social-buttons a:hover{
   color:#3FAE29; 
   border: 2px solid #3FAE29;
-=======
-  margin-left: 3%;
-}
-
-.rounded-social-buttons a:hover{
-  color:#3FAE29;
->>>>>>> fd6300c8a66218233d79ff7558f7db63fca24717
 }
 
 /*  */
 .rounded-social-buttons {
-<<<<<<< HEAD
-  bottom: 5%;
-=======
-  border: 2px solid green;
   border-radius: 20px;
   bottom: 10%;
->>>>>>> fd6300c8a66218233d79ff7558f7db63fca24717
   position: fixed;
 }
 
