@@ -128,8 +128,9 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
 }
 
 body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
-  -webkit-transform: scale(0.15);
-      -ms-transform: scale(0.15);
-          transform: scale(0.15);
+  -webkit-transform: scale(0.20) translate(-200vw);
+      -ms-transform: scale(0.20) translate(-200vw);
+          transform: scale(0.20) translate(-200vw);
   transition: all 0.3s ease;
+
 }
