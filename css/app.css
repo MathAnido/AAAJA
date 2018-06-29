@@ -1,15 +1,17 @@
 body{
   background-color: #211E1E;
+  margin-left: 3%;
 }
 
-a:hover{
-    color:#3FAE29; 
+.rounded-social-buttons a:hover{
+  color:#3FAE29;
 }
 
 /*  */
 .rounded-social-buttons {
-  left: 0%;
-  bottom: 3%;
+  border: 2px solid green;
+  border-radius: 20px;
+  bottom: 10%;
   position: fixed;
 }
 
