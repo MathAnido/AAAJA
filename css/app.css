@@ -1,7 +1,5 @@
 body{
   background-color: #211E1E;
-  padding-left: 3%;
-  padding-top: 330px;
 }
 
 a:hover{
@@ -17,6 +15,7 @@ a:hover{
 .rounded-social-buttons {
   border-radius: 20px;
   bottom: 10%;
+  padding-left: 3%;
   position: fixed;
 }
 
@@ -85,6 +84,11 @@ a:hover{
   text-decoration: underline;
 }
 
+.is-active{
+  color:#3FAE29 !important; 
+  text-decoration: underline !important;
+}
+
 .sticky-shrinknav-menu a {
   color: #ECEDEC;
 }
@@ -117,20 +121,137 @@ a:hover{
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  z-index: 3;
 }
 
-body.sticky-shrinknav-wrapper {
-  padding-top: 130px;
-}
 
 body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
   height: 3.75rem;
 }
 
 body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
-  -webkit-transform: scale(0.20) translate(-200vw);
-      -ms-transform: scale(0.20) translate(-200vw);
-          transform: scale(0.20) translate(-200vw);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   transition: all 0.3s ease;
 
 }
+
+.fullscreen-image-slider{
+  z-index: -1;
+}
+.fullscreen-image-slider .orbit-image {
+  width: 100%;
+  height: 100vh;
+}
+
+.fullscreen-image-slider .orbit-caption {
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  background: none;
+  text-align: center;
+  color: #fefefe;
+  font-weight: bold;
+}
+/* Home */
+
+#Home{
+  background: url("../images/home.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Esportes */
+.expand-column-wrapper {
+  height: 100vh;
+  max-width: 100rem;
+}
+
+.expand-column-wrapper .column {
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.expand-column-wrapper .column:hover {
+  -webkit-flex-basis: 60%;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+}
+
+.expand-column-wrapper .column:hover .expand-column-content {
+  opacity: 1;
+}
+
+.expand-column-wrapper .expand-column-content {
+  color: #fefefe;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.expand-column-wrapper .column:hover h1 {
+  opacity: 1;
+}
+
+.expand-column-wrapper h1{
+  color: #fefefe;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .expand-column-wrapper {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.expand-column-wrapper .column:nth-of-type(1){
+  background: url("../images/basquet.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.expand-column-wrapper .column:nth-of-type(2) {
+  background: url("../images/fute.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.expand-column-wrapper .column:nth-of-type(3) {
+  background: url("../images/hand.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.expand-column-wrapper .column:nth-of-type(4) {
+  background: url("../images/mesa.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.expand-column-wrapper .column:nth-of-type(5) {
+  background: url("../images/volei.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.expand-column-wrapper .column:nth-of-type(6) {
+  background: url("../images/volei.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
