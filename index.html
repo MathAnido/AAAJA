@@ -29,11 +29,11 @@
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
             <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Esportes">Esportes</a></li>
-                    <li><a href="#Festas">Festas</a></li>
-                    <li><a href="#Produtos">Produtos</a></li>
-                    <li><a href="#Institucional">Institucional</a></li>
+                    <li><a href="#Home" data-toggle="mobile-menu">Home</a></li>
+                    <li><a href="#Esportes" data-toggle="mobile-menu">Esportes</a></li>
+                    <li><a href="#Festas" data-toggle="mobile-menu">Festas</a></li>
+                    <li><a href="#Produtos" data-toggle="mobile-menu">Produtos</a></li>
+                    <li><a href="#Institucional" data-toggle="mobile-menu">Institucional</a></li>
                 </ul>
             </div>
             <div class="off-canvas-content" data-off-canvas-content>
@@ -114,7 +114,16 @@
               </div>
         </section>
         <section id="Produtos" data-magellan-target="Produtos">
-            
+            <div class="row">
+                <div class="product-card">
+                    <div class="product-card-thumbnail">
+                        <a href="#"><img src="https://placehold.it/180x180"/></a>
+                    </div>
+                    <h2 class="product-card-title"><a href="#">Caneca Top</a></h2>
+                    <span class="product-card-desc">Product Description</span>
+                    <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+                </div>
+              </div>
         </section>
         <section id="Institucional" data-magellan-target="Institucional">
 
@@ -132,6 +141,30 @@
             </a>
         </div>
     </div>
+    <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
+            <a class="contact-panel-button" data-toggle="contact-panel">Contato</a>
+            <form action="">
+              <div class="row">
+                <label>Nome Completo *
+                  <input type="text" placeholder="Nome completo">
+                </label>
+              </div>
+              <div class="row">
+                <label>Email *
+                  <input type="email" placeholder="Email">
+                </label>
+              </div>
+              <div class="row">
+                <label>Mensagem *
+                  <textarea placeholder="" rows="3"></textarea>
+                </label>
+              </div>
+              <div class="contact-panel-actions">
+                <button class="cancel-button" data-toggle="contact-panel">Cancelar</button>
+                <input type="submit" class="button submit-button" value="Enviar">
+              </div>
+            </form>
+          </div>
     <footer>
         <div class="footer">
             <div class="wrap row small-up-1 medium-up-3">
