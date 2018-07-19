@@ -21,13 +21,14 @@
 
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
 </head>
 
 <body>
     <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+            <div class="off-canvas position-left" id="mobile-menu" data-off-canvas data-transition="overlap">
                 <ul>
                     <li><a href="#Home" data-toggle="mobile-menu">Home</a></li>
                     <li><a href="#Esportes" data-toggle="mobile-menu">Esportes</a></li>
@@ -114,16 +115,20 @@
               </div>
         </section>
         <section id="Produtos" data-magellan-target="Produtos">
-            <div class="row">
-                <div class="product-card">
-                    <div class="product-card-thumbnail">
-                        <a href="#"><img src="https://placehold.it/180x180"/></a>
+            <div class="produtos">
+                <h1 class="text-center">Produtos</h4>
+                <div class="row">
+                    <div class="product-card">
+                        <div class="product-card-thumbnail">
+                            <img src="https://placehold.it/180x180" class="thumbnail"/>
+                        </div>
+                        <h2 class="product-card-title"><a href="#">Caneca Top</a></h2>
+                        <span class="product-card-desc">Product Description</span>
+                        <span class="label success">Sócio</span>
+                        <span class="product-card-price">$9.99</span>
                     </div>
-                    <h2 class="product-card-title"><a href="#">Caneca Top</a></h2>
-                    <span class="product-card-desc">Product Description</span>
-                    <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
                 </div>
-              </div>
+            </div>
         </section>
         <section id="Institucional" data-magellan-target="Institucional">
 
@@ -187,7 +192,7 @@
         </div>
         <div class="footer-copyright">
             <div class="row align-center">
-                &copy; 2018 AAAJA.
+                &copy; 2017 Todos os direitos reservados.
             </div>
         </div>
     </footer>

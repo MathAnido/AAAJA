@@ -11,6 +11,15 @@ body{
   margin: 0 auto;
 }
 
+.produtos{
+  background-color: #211E1E;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
+} 
+.produtos h1{
+  color: #3FAE29;
+}
 .off-canvas-wrapper{
   background-color: #211E1E;
 }
@@ -249,14 +258,6 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .expand-column-wrapper {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .expand-column-wrapper .column:nth-of-type(1){
   background: url("../images/basquet.jpg") center center no-repeat;
   height: 100vh;
@@ -294,17 +295,33 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
 }
 
 footer{
-  padding:50px 0px 0px 0px;
-  color: #ECEDEC;
+  position: sticky;
+  bottom: 0%;
+  display: block;
+  z-index: -5;
 }
-footer h4{
+.footer{
+  padding:40px 0px 30px 0px;
+  color: #ECEDEC;
+  background-color: rgb(71, 71, 71);
+}
+
+.footer h4{
   font-weight: bold;
   color: #3FAE29;
 }
-footer a{
+.footer a{
   display:block;
 }
 
+.footer-copyright{
+  background-color: #211E1E;
+  padding: 5px 0px 0px 0px;
+  -webkit-box-shadow: inset 0px 10px 15px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0px 10px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 10px 15px 0px rgba(0,0,0,0.5);
+  color:#ECEDEC;
+}
 
 .product-card {
   background-color: #fefefe;
@@ -340,34 +357,6 @@ footer a{
   font-size: 0.85rem;
   font-weight: 600;
   margin-top: 0.8rem;
-}
-
-.product-card-sale {
-  color: #cacaca;
-  display: inline-block;
-  font-size: 0.85rem;
-  margin-left: 0.3rem;
-  text-decoration: line-through;
-}
-
-.product-card-colors {
-  display: block;
-  margin-top: 0.8rem;
-}
-
-.product-card-color-option {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-}
-
-@media (max-width: 639px){
-  .nav-desktop{
-    display: none;
-  }
-  .rounded-social-buttons{
-    display: none;
-  }
 }
 
 .contact-panel-button {
@@ -450,9 +439,4 @@ footer a{
   bottom: 0;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .contact-panel {
-    width: 100%;
-    right: 0;
-  }
-}
+
