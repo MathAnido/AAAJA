@@ -17,11 +17,17 @@
             -ms-flex-direction: column;
                 flex-direction: column;
     }
-    #Home{
-        background: url("../images/homemobile.jpg");
+    .dinoMascot{
+        position: absolute;
+        background: url("../images/mascotDino.svg") no-repeat;
         background-size: cover;
-        height: 100vh;
-    }
+        height: 50vh;
+        width: 50vh;
+        bottom: -10%;
+        right: 0%;
+        overflow-x: hidden;
+        z-index: 0;
+      }
 }
 /* Medium and up */
 @media screen and (min-width: 40em) {}

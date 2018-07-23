@@ -29,6 +29,7 @@
     <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
             <div class="off-canvas position-left" id="mobile-menu" data-off-canvas data-transition="overlap">
+                <div class="tipografia2"></div>
                 <ul>
                     <li><a href="#Home" data-toggle="mobile-menu">Home</a></li>
                     <li><a href="#Esportes" data-toggle="mobile-menu">Esportes</a></li>
@@ -41,7 +42,6 @@
                 <div class="title-bar show-for-small-only">
                     <div class="title-bar-left">
                         <button class="menu-icon" type="button" data-open="mobile-menu"></button>
-                        <span class="title-bar-title">AAAJA</span>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
     </div>
     <div class="main">
         <section id="Home" data-magellan-target="Home">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="dinoMascot"></div>
         </section>
         <section id="Esportes" data-magellan-target="Esportes">
                 <div class="row expand-column-wrapper">
@@ -85,11 +85,11 @@
                 <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
                   <ul class="orbit-container">
                     <button class="orbit-previous">
-                      <span class="show-for-sr">Previous Slide</span>
+                      <span class="show-for-sr">Slide Anterior</span>
                       <span class="nav fa fa-chevron-left fa-3x"></span>
                     </button>
                     <button class="orbit-next">
-                      <span class="show-for-sr">Next Slide</span>
+                      <span class="show-for-sr">Próximo Slide</span>
                       <span class="nav fa fa-chevron-right fa-3x"></span>
                     </button>
                     <li class="is-active orbit-slide">
@@ -118,15 +118,70 @@
             <div class="produtos">
                 <h1 class="text-center">Produtos</h4>
                 <div class="row">
-                    <div class="product-card">
-                        <div class="product-card-thumbnail">
-                            <img src="https://placehold.it/180x180" class="thumbnail"/>
+                    <div class="product-card socio">
+                        <div class="card-info-label">
+                            <div class="card-info-label-text">
+                                Sócio
+                            </div>
                         </div>
-                        <h2 class="product-card-title"><a href="#">Caneca Top</a></h2>
-                        <span class="product-card-desc">Product Description</span>
-                        <span class="label success">Sócio</span>
-                        <span class="product-card-price">$9.99</span>
+                        <h2 class="product-card-title text-center">Caneca Top</h2>
+                        <div class="card-info-content">
+                            <div class="product-card-thumbnail">
+                                <img src="https://placehold.it/180x180" class="thumbnail"/>
+                            </div>
+                            <span class="product-card-desc text-center">Product Description</span>
+                            <span class="label success">Sócio</span>
+                            <span class="product-card-price">$9.99</span>
+                        </div>
                     </div>
+                    <div class="product-card inter">
+                        <div class="card-info-label">
+                            <div class="card-info-label-text">
+                                Inter
+                            </div>
+                        </div>
+                        <h2 class="product-card-title text-center">Caneca Top</h2>
+                        <div class="card-info-content">
+                            <div class="product-card-thumbnail">
+                                <img src="https://placehold.it/180x180" class="thumbnail"/>
+                            </div>
+                            <span class="product-card-desc text-center">Product Description</span>
+                            <span class="label success">Sócio</span>
+                            <span class="product-card-price">$9.99</span>
+                        </div>
+                    </div>
+                    <div class="product-card socio">
+                        <div class="card-info-label">
+                            <div class="card-info-label-text">
+                                Sócio
+                            </div>
+                        </div>
+                        <h2 class="product-card-title text-center">Caneca Top</h2>
+                        <div class="card-info-content">
+                            <div class="product-card-thumbnail">
+                                <img src="https://placehold.it/180x180" class="thumbnail"/>
+                            </div>
+                            <span class="product-card-desc text-center">Product Description</span>
+                            <span class="label success">Sócio</span>
+                            <span class="product-card-price">$9.99</span>
+                        </div>
+                    </div>
+                    <div class="product-card socio">
+                        <div class="card-info-label">
+                            <div class="card-info-label-text">
+                                Sócio
+                            </div>
+                        </div>
+                        <h2 class="product-card-title text-center">Caneca Top</h2>
+                        <div class="card-info-content">
+                            <div class="product-card-thumbnail">
+                                <img src="https://placehold.it/180x180" class="thumbnail"/>
+                            </div>
+                            <span class="product-card-desc text-center">Product Description</span>
+                            <span class="label success">Sócio</span>
+                            <span class="product-card-price">$9.99</span>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </section>
@@ -147,29 +202,29 @@
         </div>
     </div>
     <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
-            <a class="contact-panel-button" data-toggle="contact-panel">Contato</a>
-            <form action="">
-              <div class="row">
-                <label>Nome Completo *
-                  <input type="text" placeholder="Nome completo">
-                </label>
-              </div>
-              <div class="row">
-                <label>Email *
-                  <input type="email" placeholder="Email">
-                </label>
-              </div>
-              <div class="row">
-                <label>Mensagem *
-                  <textarea placeholder="" rows="3"></textarea>
-                </label>
-              </div>
-              <div class="contact-panel-actions">
-                <button class="cancel-button" data-toggle="contact-panel">Cancelar</button>
-                <input type="submit" class="button submit-button" value="Enviar">
-              </div>
-            </form>
-          </div>
+        <a class="contact-panel-button" data-toggle="contact-panel">Contato</a>
+        <form action="">
+            <div class="row">
+            <label>Nome Completo *
+                <input type="text" placeholder="Nome completo">
+            </label>
+            </div>
+            <div class="row">
+            <label>Email *
+                <input type="email" placeholder="Email">
+            </label>
+            </div>
+            <div class="row">
+            <label>Mensagem *
+                <textarea placeholder="" rows="3"></textarea>
+            </label>
+            </div>
+            <div class="contact-panel-actions">
+            <button class="cancel-button" data-toggle="contact-panel">Cancelar</button>
+            <input type="submit" class="button submit-button" value="Enviar">
+            </div>
+        </form>
+    </div>
     <footer>
         <div class="footer">
             <div class="wrap row small-up-1 medium-up-3">
@@ -192,7 +247,7 @@
         </div>
         <div class="footer-copyright">
             <div class="row align-center">
-                &copy; 2017 Todos os direitos reservados.
+                &copy; 2018 Todos os direitos reservados.
             </div>
         </div>
     </footer>

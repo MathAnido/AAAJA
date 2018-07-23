@@ -3,8 +3,14 @@
 }
 body{
   background-color: #211E1E;
+  overflow-x: hidden;
 }
 
+.main{
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+}
 .wrap{
   width:90%;
   max-width: 1100px;
@@ -13,9 +19,6 @@ body{
 
 .produtos{
   background-color: #211E1E;
-  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.5);
 } 
 .produtos h1{
   color: #3FAE29;
@@ -65,6 +68,7 @@ a:hover{
   bottom: 10%;
   padding-left: 3%;
   position: fixed;
+  z-index: 1;
 }
 
 .rounded-social-buttons .social-button {
@@ -97,14 +101,22 @@ a:hover{
   position: absolute;
   background: url("../images/mascotDino.svg");
   background-size: cover;
-  height: 600px;
-  width: 600px;
-  bottom: 10%;
-  right: 5%;
+  height: 90vh;
+  width: 90vh;
+  bottom: -5%;
+  right: -5%;
+  z-index: 0;
 }
 
 .tipografia{
+  background: url("../images/tipografia.svg") no-repeat;
   height: 12rem;
+}
+
+.tipografia2{
+  background: url("../images/tipografia.svg") no-repeat;
+  margin: 1rem 0;
+  height: 5rem;
 }
 
 /* Navbar */
@@ -205,9 +217,8 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
 /* Home */
 
 #Home{
-  background: url("../images/home.jpg");
-  background-size: cover;
-
+    background-color: #595959;
+    height: 100vh;
 }
 
 /* Esportes */
@@ -262,37 +273,37 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
   background: url("../images/basquet.jpg") center center no-repeat;
   height: 100vh;
   background-size: cover;
+  z-index: 1;
 }
 
 .expand-column-wrapper .column:nth-of-type(2) {
   background: url("../images/fute.jpg") center center no-repeat;
   height: 100vh;
   background-size: cover;
+  z-index: 1;
 }
 
 .expand-column-wrapper .column:nth-of-type(3) {
   background: url("../images/hand.jpg") center center no-repeat;
   height: 100vh;
   background-size: cover;
+  z-index: 1;
 }
 
 .expand-column-wrapper .column:nth-of-type(4) {
   background: url("../images/mesa.jpg") center center no-repeat;
   height: 100vh;
   background-size: cover;
+  z-index: 1;
 }
 
 .expand-column-wrapper .column:nth-of-type(5) {
   background: url("../images/volei.jpg") center center no-repeat;
   height: 100vh;
   background-size: cover;
+  z-index: 1;
 }
 
-.expand-column-wrapper .column:nth-of-type(6) {
-  background: url("../images/volei.jpg") center center no-repeat;
-  height: 100vh;
-  background-size: cover;
-}
 
 footer{
   position: sticky;
@@ -323,13 +334,6 @@ footer{
   color:#ECEDEC;
 }
 
-.product-card {
-  background-color: #fefefe;
-  border: 1px solid #e6e6e6;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-}
-
 .product-card-thumbnail {
   display: block;
   position: relative;
@@ -340,7 +344,7 @@ footer{
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.45rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0;
 }
 
@@ -378,7 +382,7 @@ footer{
 
 .contact-panel {
   padding: 1rem;
-  z-index: 1;
+  z-index: 15;
   background: #0a0a0a;
   width: 350px;
   height: 375px;
@@ -439,4 +443,63 @@ footer{
   bottom: 0;
 }
 
+.card-product.socio {
+  border-color: #3adb76;
+}
 
+.product-card.socio .card-info-label {
+  border-color: transparent #3adb76 transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #3adb76 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.product-card.inter {
+  border-color: #cc4b37;
+}
+
+.product-card.inter .card-info-label {
+  border-color: transparent #cc4b37 transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #cc4b37 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.card-info-label-text {
+  color: #fefefe;
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: relative;
+  right: -2.25rem;
+  top: 1px;
+  white-space: nowrap;
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.card-info-label {
+  border-style: solid;
+  border-width: 0 4.375rem 2.5rem 0;
+  float: right;
+  height: 0px;
+  width: 0px;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.product-card{
+  background: #fefefe;
+  border: 1px solid #8a8a8a;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0.5rem;
+  overflow: hidden;
+  border-radius: 0;
+  border-color: #3adb76;
+}
+
+.product-card .card-info-content {
+  padding: 0 1rem 0.875rem;
+}
+
+.title-bar{
+  position: fixed;
+  background: transparent;
+  z-index: 6;
+}
