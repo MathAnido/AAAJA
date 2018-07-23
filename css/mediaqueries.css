@@ -17,6 +17,11 @@
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+    #Home{
+        background: url("../images/homemobile.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
 }
 /* Medium and up */
 @media screen and (min-width: 40em) {}
