@@ -7,7 +7,7 @@ $branco:#ECEDEC;
 }
 
 a:hover{
-    color: $verde; 
+    color: $verde;
 }
 
 body{
@@ -79,7 +79,7 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
     position: fixed;
     z-index: 1;
     a:hover{
-        color:$verde; 
+        color:$verde;
         border: 2px solid $verde;
     }
     .social-button {
@@ -118,19 +118,19 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
     right: -5%;
     z-index: 0;
 }
-  
+
 .tipografia{
     background: url("../images/tipografia.svg") no-repeat;
     height: 12rem;
 }
-  
+
 .tipografia2{
     background: url("../images/tipografia.svg") no-repeat;
     margin: 1rem 0;
     height: 5rem;
 }
 .is-active{
-    color:$verde !important; 
+    color:$verde !important;
 }
 .sticky-shrinknav-menu {
     position: absolute;
@@ -151,7 +151,7 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
         color: $branco;
         font-weight: bold;
         &:hover {
-            color:$verde; 
+            color:$verde;
         }
     }
 }
@@ -194,11 +194,11 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
         height: 100vh;
     }
     .orbit-caption {
-        bottom: 50%;
-        -webkit-transform: translateY(50%);
-            -ms-transform: translateY(50%);
-                transform: translateY(50%);
-        background: none;
+        bottom: 15%;
+        -webkit-transform: translateY(15%);
+            -ms-transform: translateY(15%);
+                transform: translateY(15%);
+        background-color: rgba(0,0,0,0.5);
         text-align: center;
         color: $branco;
         font-weight: bold;
@@ -210,6 +210,14 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
     height: 100vh;
 }
 #Institucional{
+    background-color: #595959;
+    height: 100vh;
+}
+#Esportes{
+    background-color: #595959;
+    height: 100vh;
+}
+#Produtos{
     background-color: #595959;
     height: 100vh;
 }
@@ -272,6 +280,10 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
 
 footer{
   position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   bottom: 0%;
   display: block;
   z-index: -2;
@@ -292,7 +304,6 @@ footer{
         font-weight: bold;
     }
 }
-
 .footer-copyright{
     background-color: $preto;
     padding: 5px 0px 0px 0px;
@@ -301,12 +312,12 @@ footer{
     box-shadow: inset 0px 10px 15px 0px rgba(0,0,0,0.5);
     color:$branco;
 }
-  
+
 .product-card-thumbnail {
     display: block;
     position: relative;
 }
-  
+
 .product-card-title {
     font-family: 'Open sans', sans-serif;
     font-size: 0.9rem;
@@ -315,14 +326,14 @@ footer{
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
-  
+
 .product-card-desc {
     color: #8a8a8a;
     display: block;
     font-family: 'Open sans', sans-serif;
     font-size: 0.85rem;
 }
-  
+
 .product-card-price {
     color: #3e3e3e;
     display: inline-block;
@@ -388,7 +399,7 @@ footer{
         padding: 0.75rem 1rem;
         color: #fefefe;
         transition: background 0.25s ease-in-out;
-    } 
+    }
     .cancel-button:hover {
         background: #242424;
         color: #f0f0f0;
@@ -438,7 +449,7 @@ footer{
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
 }
-  
+
 .product-card{
     background: #fefefe;
     border: 1px solid #8a8a8a;
