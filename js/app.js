@@ -1,4 +1,4 @@
-$(document).foundation()
+$(document).foundation();
 
 $(function() {
     $(window).scroll(function() {
@@ -9,16 +9,13 @@ $(function() {
         $("body").removeClass("sticky-shrinknav-wrapper");
       }
     });
-  });
+});
 
-// closes the panel on click outside
 $(document).mouseup(function (e) {
   var container = $('#contact-panel');
-  if (!container.is(e.target) // if the target of the click isn't the container...
-  && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
+  if (!container.is(e.target) && container.has(e.target).length === 0){
       container.removeClass('is-active');
-    }
+}
 });
   
   
